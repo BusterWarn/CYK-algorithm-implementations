@@ -12,10 +12,10 @@ public interface CYKStrategy {
 
     /**
      * Parses the string and via the implemented strategy tells if it belongs to a context-free grammar in CNF form.
-     * @param string
-     * @return
+     * @param string The string as an array of chars.
+     * @return True if string belongs to language, false if not.
      */
-    public boolean parse(String string);
+    public boolean parse(char[] string);
 
     public String getName();
 }

@@ -9,7 +9,7 @@ import se.umu.cs.warn.buster.cyk.CYKStrategy;
  */
 public class CYKNaive implements CYKStrategy {
     @Override
-    public boolean parse(String string) {
+    public boolean parse(char[] string) {
         return false;
     }
 

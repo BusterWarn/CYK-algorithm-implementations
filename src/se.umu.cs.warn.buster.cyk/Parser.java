@@ -7,7 +7,7 @@ package se.umu.cs.warn.buster.cyk;
  * given in Chomsky normal form (CNF).
  *
  * This parser uses the Strategy design pattern, each implemented parser being able to parse strings.
- * @see se.umu.cs.warn.buster.cyk.CYKStrategy;
+ * @see se.umu.cs.warn.buster.cyk.CYKStrategy
  */
 public class Parser {
 
