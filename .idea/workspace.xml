@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a85fd0a-bf11-404a-9fd3-a0b40264b377" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/CYKStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/topdown/CYKTopDown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Grammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CYK-algorithm-implementations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CYK-algorithm-implementations.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/CYKStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/CYKStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/Grammar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/bottomup/CYKBottomUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/naive/CYKNaive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/topdown/CYKTopDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/topdown/CYKTopDown.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +42,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -48,12 +56,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="se.umu.cs.warn.buster.cyk.test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="se.umu.cs.warn.buster.cyk" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,16 +102,29 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="681" y="1437" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598599070726">
+      <screen x="-116" y="1080" width="2048" height="1112" />
+    </state>
+    <state x="681" y="1437" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599070726" />
     <state x="713" y="1342" key="#com.intellij.ide.util.MemberChooser" timestamp="1598515597061">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
     <state x="713" y="1342" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598515597061" />
+    <state x="638" y="1412" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1598599217345">
+      <screen x="-116" y="1080" width="2048" height="1112" />
+    </state>
+    <state x="638" y="1412" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599217345" />
     <state x="691" y="1530" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598514012042">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
     <state x="691" y="1530" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598514012042" />
+    <state x="691" y="1542" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1598599166764">
+      <screen x="-116" y="1080" width="2048" height="1112" />
+    </state>
+    <state x="691" y="1542" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599166764" />
     <state x="688" y="1377" key="FileChooserDialogImpl" timestamp="1598514365306">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
@@ -94,5 +133,17 @@
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
     <state x="388" y="1210" key="SettingsEditor/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598534048163" />
+    <state x="612" y="1527" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1598599249945">
+      <screen x="-116" y="1080" width="2048" height="1112" />
+    </state>
+    <state x="612" y="1527" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599249945" />
+    <state x="679" y="1442" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598599232158">
+      <screen x="-116" y="1080" width="2048" height="1112" />
+    </state>
+    <state x="679" y="1442" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599232158" />
+    <state x="571" y="1323" width="672" height="678" key="search.everywhere.popup" timestamp="1598602301993">
+      <screen x="-116" y="1080" width="2048" height="1112" />
+    </state>
+    <state x="571" y="1323" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598602301993" />
   </component>
 </project>
