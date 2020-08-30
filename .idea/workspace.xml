@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a85fd0a-bf11-404a-9fd3-a0b40264b377" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Grammar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CYK-algorithm-implementations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CYK-algorithm-implementations.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/CYKStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/CYKStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/Grammar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/bottomup/CYKBottomUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/naive/CYKNaive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se.umu.cs.warn.buster.cyk/topdown/CYKTopDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/topdown/CYKTopDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Grammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/Grammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/test/GrammarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/test/GrammarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +74,26 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.Main" />
+      <module name="CYK-algorithm-implementations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,6 +118,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1598767497645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598767497645" />
     <state x="681" y="1437" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598599070726">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
@@ -125,14 +142,16 @@
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
     <state x="691" y="1542" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599166764" />
-    <state x="688" y="1377" key="FileChooserDialogImpl" timestamp="1598514365306">
-      <screen x="-116" y="1080" width="2048" height="1112" />
+    <state x="754" y="278" key="FileChooserDialogImpl" timestamp="1598767492634">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="1377" key="FileChooserDialogImpl/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598514365306" />
-    <state x="388" y="1210" key="SettingsEditor" timestamp="1598534048163">
-      <screen x="-116" y="1080" width="2048" height="1112" />
+    <state x="754" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598767492634" />
+    <state x="473" y="122" key="SettingsEditor" timestamp="1598767607766">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="388" y="1210" key="SettingsEditor/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598534048163" />
+    <state x="473" y="122" key="SettingsEditor/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598767607766" />
     <state x="612" y="1527" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1598599249945">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
@@ -141,9 +160,13 @@
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
     <state x="679" y="1442" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599232158" />
-    <state x="571" y="1323" width="672" height="678" key="search.everywhere.popup" timestamp="1598602301993">
+    <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1598767419105">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="660" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598767419105" />
+    <state x="571" y="1323" width="672" height="678" key="search.everywhere.popup" timestamp="1598609096949">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
-    <state x="571" y="1323" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598602301993" />
+    <state x="571" y="1323" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598609096949" />
   </component>
 </project>
