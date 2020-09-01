@@ -18,4 +18,6 @@ public interface CYKStrategy {
     public boolean parse(char[] string);
 
     public String getName();
+
+    public void setGrammar(Grammar grammar);
 }

@@ -19,10 +19,9 @@ public class GrammarTest {
     private void setGrammarWithProductions() {
         grammarSetUp();
         grammar.addProductionRule('S', "AB");
-        grammar.addProductionRule('A', "A");
+        grammar.addProductionRule('A', "BA");
         grammar.addProductionRule('A', 'a');
-        grammar.addProductionRule('B', "BA");
-        grammar.addProductionRule('B', "BB");
+        grammar.addProductionRule('B', "AB");
         grammar.addProductionRule('B', 'b');
     }
 

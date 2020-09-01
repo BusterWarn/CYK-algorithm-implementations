@@ -11,11 +11,17 @@ package se.umu.cs.warn.buster.cyk;
  */
 public class Parser {
 
+    private Grammar grammar;
     private CYKStrategy strategy;
+
+    public Parser(Grammar grammar) {
+        this.grammar = grammar;
+    }
 
     public boolean parse(String string) {
 
-        return false;
+        strategy.setGrammar(grammar);
+        return strategy.parse(string.toCharArray());
     }
 
     public void setStrategy(CYKStrategy strategy) {
