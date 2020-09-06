@@ -28,15 +28,13 @@ public class Grammar {
     public char[] produceRandom(char production, int length) {
 
         if (production < 'A' || production > 'Z')
-            throw new IllegalArgumentException("Error producing! Must produce from a nonTerminal, which must be " +
-                    "between capital ascii char between A-Z");
+            throwNonTerminalInvalidCharError(production);
         int loc = -1;
 
         return null;
     }
 
     public String findCartesianProductFromProduction (char[] produced) {
-
 
         return null;
     }
@@ -58,16 +56,16 @@ public class Grammar {
 
     private boolean setUpCorrectly() {
 
-        if (start < 'A' || start > 'Z')
+        if (!isNonTerminalProductionCharacter(start))
             return false;
 
         for (char terminal : terminals) {
-            if (terminal < 'a' || terminal > 'z')
+            if (!isTerminalProductionCharacter(terminal))
                 return false;
         }
 
         for (char nonTerminal : nonTerminals) {
-            if (nonTerminal < 'A' || nonTerminal > 'Z')
+            if (!isNonTerminalProductionCharacter(nonTerminal))
                 return false;
         }
 
@@ -90,9 +88,8 @@ public class Grammar {
     }
 
     public void setStart(char start) throws IllegalArgumentException {
-        if (start < 'A' || start > 'Z')
-            throw new IllegalArgumentException("Error with start symbol: " + start + "\nStart symbol must be a char" +
-                    " between capital A-Z");
+        if (!isNonTerminalProductionCharacter(start))
+            throwNonTerminalInvalidCharError(start);
 
         if (nonTerminals != null && !charArrayContains(nonTerminals, start))
             throw new IllegalArgumentException("Error with start symbol: " + start + "\nNon terminal symbols are " +
@@ -104,7 +101,7 @@ public class Grammar {
 
     public void setNonTerminals(char[] nonTerminals) throws IllegalArgumentException {
         for (char c : nonTerminals) {
-            if (c < 'A' || c > 'Z')
+            if (!isNonTerminalProductionCharacter(c))
                 throw new IllegalArgumentException("Error non terminal symbol: " + start + "\nAll non terminals must" +
                         " be a char between capital A-Z");
 
@@ -119,9 +116,8 @@ public class Grammar {
 
     public void setTerminals(char[] terminals) throws IllegalArgumentException {
         for (char terminal : terminals) {
-            if (terminal < 'a' || terminal > 'z')
-                throw new IllegalArgumentException("Error terminal symbol: " + terminal + "\nAll terminals must be a " +
-                        "char between lower case a-z");
+            if (!isTerminalProductionCharacter(terminal))
+                throwTerminalInvalidCharError(terminal);
         }
         this.terminals = terminals;
     }
@@ -183,16 +179,44 @@ public class Grammar {
     }
 
     public String[] getNonTerminalProductions(char from) {
-        if (from < 'A' || from > 'Z')
-            throw new IllegalArgumentException("Error with input: " + from + "\nNon terminal symbols must bee " +
-                    "between capital A-Z");
+        if (!isNonTerminalProductionCharacter(from))
+            throwNonTerminalInvalidCharError(from);
+
         return nonTerminalProductions.get(from);
     }
 
     public Character[] getTerminalProductions(char from) {
         if (from < 'A' || from > 'Z')
-            throw new IllegalArgumentException("Error with input: " + from + "\nNon terminal symbols must bee " +
+            throw new IllegalArgumentException("Error with input: " + from + "\nNon terminal symbols must be " +
                     "between capital A-Z");
+
+        System.out.println(terminalProductions);
         return terminalProductions.get(from);
+    }
+
+    private boolean isTerminalProductionCharacter(char production) {
+        if ((production >= 'a' && production <= 'z') || production == '(' || production == ')')
+            return true;
+
+        return false;
+    }
+
+    private boolean isNonTerminalProductionCharacter(char production) {
+        if (production >= 'A' && production <= 'Z')
+            return true;
+
+        return false;
+    }
+
+    private void throwTerminalInvalidCharError(char invalidChar) {
+        System.out.println("Throwing terminal");
+        throw new IllegalArgumentException("Error with Terminal character: " + invalidChar +
+                "\nTerminal symbols must be ascii characters between non capital a-z or parenthesis ()");
+    }
+
+    private void throwNonTerminalInvalidCharError(char invalidChar) {
+        System.out.println("Throwing non terminal");
+        throw new IllegalArgumentException("Error with Non Terminal character: " + invalidChar +
+                "\nNon terminal symbols must be ascii characters between capital A-Z");
     }
 }

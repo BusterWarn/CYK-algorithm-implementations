@@ -46,6 +46,13 @@ public class GrammarTest {
         Assert.assertArrayEquals("ab".toCharArray(), grammar.getTerminals());
     }
 
+    @Test
+    public void testSetParenthesisTerminals() {
+        grammar = new Grammar();
+        grammar.setTerminals("()".toCharArray());
+        Assert.assertArrayEquals("()".toCharArray(), grammar.getTerminals());
+    }
+
     @Test (expected = IllegalArgumentException.class)
     public void testSetFaultyStart()  throws IllegalArgumentException {
         grammar = new Grammar();
@@ -89,8 +96,6 @@ public class GrammarTest {
     public void testAddTerminalProduction() {
         grammarSetUp();
         grammar.addProductionRule('A', 'a');
-        if (grammar == null)
-            System.out.println("WHAT");
         char production = grammar.getTerminalProductions('A')[0];
         assertEquals('a', production);
     }
@@ -105,7 +110,6 @@ public class GrammarTest {
     public void testAddNonTerminalProductionWithFaultNonExistingToNonTerminal() {
         grammarSetUp();
         grammar.addProductionRule('A', "AC");
-        System.out.println("Here lad");
     }
 
     @Test (expected = IllegalArgumentException.class)
