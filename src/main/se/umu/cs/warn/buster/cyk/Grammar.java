@@ -132,8 +132,8 @@ public class Grammar {
 
         for (int i = 0; i < production.length(); i++) {
             if (!charArrayContains(nonTerminals, production.charAt(i)))
-                throw new IllegalArgumentException("Error from: " + production.charAt(i) + "\nProduction is not a " +
-                        "member of non terminal productions: " + nonTerminalProductions);
+                throw new IllegalArgumentException("Error from input production characther: " + production.charAt(i) +
+                        "\nProduction is not a member of non terminal characters: " + String.valueOf(nonTerminals));
         }
 
         if (nonTerminalProductions == null) {
@@ -165,7 +165,7 @@ public class Grammar {
 
         if (!charArrayContains(terminals, production))
             throw new IllegalArgumentException("Error from to production: " + production + "\nProduction is not a " +
-                    "member of non terminal productions: " + nonTerminalProductions);
+                    "member of non terminal productions: " + nonTerminalProductions.toString());
 
         if (terminalProductions == null) {
             terminalProductions = new char[nonTerminals.length][];
