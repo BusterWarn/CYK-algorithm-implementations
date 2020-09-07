@@ -12,16 +12,21 @@ public class CYKNaive implements CYKStrategy {
 
     private Grammar grammar;
     private char[] string;
+    private int nrOperations;
 
     @Override
     public boolean parse(char[] string) {
 
+        nrOperations = 0;
         this.string = string;
-        return parseStringRecursively(grammar.getStart(), 0, string.length - 1);
+        boolean solution = parseStringRecursively(grammar.getStart(), 0, string.length - 1);
+        System.out.println(nrOperations);
+        return solution;
     }
 
     private boolean parseStringRecursively(char fromNonTerminal, int startPos, int endPos) {
 
+        nrOperations++;
         if (startPos == endPos) {
             char[] terminalProductions = grammar.getTerminalProductions(fromNonTerminal);
 
@@ -37,8 +42,11 @@ public class CYKNaive implements CYKStrategy {
             for (String s : nonTerminalProductions) {
                 char[] productions = s.toCharArray();
                 for (int i = startPos + 1; i <= endPos; i++) {
-                    if (       parseStringRecursively(productions[0], startPos, i - 1)
-                            && parseStringRecursively(productions[1], i, endPos))
+
+                    boolean leftValue = parseStringRecursively(productions[0], startPos, i - 1);
+                    boolean rightValue = parseStringRecursively(productions[1], i, endPos);
+
+                    if (leftValue && rightValue)
                         return true;
                 }
             }
