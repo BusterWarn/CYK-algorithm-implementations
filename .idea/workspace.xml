@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a85fd0a-bf11-404a-9fd3-a0b40264b377" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/naive/CYKNaiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/naive/CYKNaiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CYK-algorithm-implementations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CYK-algorithm-implementations.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/se/umu/cs/warn/buster/cyk/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -258,11 +259,12 @@
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.1.right/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1599460830960" />
-    <state x="473" y="122" key="SettingsEditor" timestamp="1598769502551">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="473" y="151" width="1024" height="845" key="SettingsEditor" timestamp="1599475229775">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="388" y="1210" key="SettingsEditor/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598534048163" />
     <state x="473" y="122" key="SettingsEditor/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598769502551" />
+    <state x="473" y="151" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1599475229775" />
     <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1598768988420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
