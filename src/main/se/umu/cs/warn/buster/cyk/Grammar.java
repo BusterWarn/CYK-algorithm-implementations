@@ -1,7 +1,5 @@
 package se.umu.cs.warn.buster.cyk;
 
-import java.util.HashMap;
-
 /**
  * Author: Buster Hultgren Wärn - busterw@cs.umu.se
  *
@@ -12,8 +10,9 @@ public class Grammar {
     private char start;
     private char[] nonTerminals;
     private char[] terminals;
-    private HashMap<Character, String[]> nonTerminalProductions;
-    private HashMap<Character, Character[]> terminalProductions;
+    private String[][] nonTerminalProductions;
+    private char[][] terminalProductions;
+
 
     private final static char EOF = (char) -1;
 
@@ -21,8 +20,8 @@ public class Grammar {
         start = EOF;
         nonTerminals = null;
         terminals = null;
-        nonTerminalProductions = new HashMap<>();
-        terminalProductions = new HashMap<>();
+        nonTerminalProductions = null;
+        terminalProductions = null;
     }
 
     public char[] produceRandom(char production, int length) {
@@ -137,17 +136,22 @@ public class Grammar {
                         "member of non terminal productions: " + nonTerminalProductions);
         }
 
-        String[] newProductions;
-        if (nonTerminalProductions.containsKey(from)) {
-            String[] previousProductions = nonTerminalProductions.get(from);
-            newProductions = new String[previousProductions.length + 1];
-            System.arraycopy(previousProductions, 0, newProductions, 0, previousProductions.length);
-            newProductions[newProductions.length - 1] = production;
-        } else {
-            newProductions = new String[1];
-            newProductions[0] = production;
+        if (nonTerminalProductions == null) {
+            nonTerminalProductions = new String[nonTerminals.length][];
         }
-        nonTerminalProductions.put(from, newProductions);
+
+        int index = nonTerminalProductionIndex(from);
+        if (nonTerminalProductions[index] == null) {
+            nonTerminalProductions[index] = new String[1];
+            nonTerminalProductions[index][0] = production;
+        } else {
+            String[] temp = new String[nonTerminalProductions[index].length + 1];
+            for (int i = 0; i < nonTerminalProductions[index].length; i++) {
+                temp[i] = nonTerminalProductions[index][i];
+            }
+            temp[temp.length - 1] = production;
+            nonTerminalProductions[index] = temp;
+        }
     }
 
     public void addProductionRule(char from, char production) {
@@ -163,35 +167,58 @@ public class Grammar {
             throw new IllegalArgumentException("Error from to production: " + production + "\nProduction is not a " +
                     "member of non terminal productions: " + nonTerminalProductions);
 
-        Character[] newProductions;
-        if (terminalProductions.containsKey(from)) {
-            Character[] previousProductions = terminalProductions.get(from);
-            newProductions = new Character[previousProductions.length + 1];
-            for (int i = 0; i < previousProductions.length; i++) {
-                newProductions[i] = previousProductions[i];
-            }
-            newProductions[newProductions.length - 1] = production;
-        } else {
-            newProductions = new Character[1];
-            newProductions[0] = production;
+        if (terminalProductions == null) {
+            terminalProductions = new char[nonTerminals.length][];
         }
-        terminalProductions.put(from, newProductions);
+
+        int index = nonTerminalProductionIndex(from);
+        if (terminalProductions[index] == null) {
+            terminalProductions[index] = new char[1];
+            terminalProductions[index][0] = production;
+        } else {
+            char[] temp = new char[terminalProductions[index].length + 1];
+            for (int i = 0; i < terminalProductions[index].length; i++) {
+                temp[i] = terminalProductions[index][i];
+            }
+            temp[temp.length - 1] = production;
+            terminalProductions[index] = temp;
+        }
     }
 
     public String[] getNonTerminalProductions(char from) {
         if (!isNonTerminalProductionCharacter(from))
             throwNonTerminalInvalidCharError(from);
 
-        return nonTerminalProductions.get(from);
+        int index = nonTerminalProductionIndex(from);
+        if (nonTerminalProductions != null && nonTerminalProductions[index] != null)
+            return nonTerminalProductions[index];
+
+        return null;
     }
 
-    public Character[] getTerminalProductions(char from) {
-        if (from < 'A' || from > 'Z')
-            throw new IllegalArgumentException("Error with input: " + from + "\nNon terminal symbols must be " +
-                    "between capital A-Z");
+    public char[] getTerminalProductions(char from) {
+        if (!isNonTerminalProductionCharacter(from))
+            throwNonTerminalInvalidCharError(from);
 
-        System.out.println(terminalProductions);
-        return terminalProductions.get(from);
+        int index = nonTerminalProductionIndex(from);
+        if (terminalProductions != null && terminalProductions[index] != null)
+            return terminalProductions[index];
+
+        return null;
+    }
+
+    private int terminalProductionIndex(char terminal) {
+        for (int i = 0; i < terminals.length; i++)
+            if (terminals[i] == terminal)
+                return i;
+        return -1;
+    }
+
+    private int nonTerminalProductionIndex(char nonTerminal) {
+        for (int i = 0; i < nonTerminals.length; i++)
+            if (nonTerminals[i] == nonTerminal)
+                return i;
+        return -1;
     }
 
     private boolean isTerminalProductionCharacter(char production) {
@@ -209,13 +236,11 @@ public class Grammar {
     }
 
     private void throwTerminalInvalidCharError(char invalidChar) {
-        System.out.println("Throwing terminal");
         throw new IllegalArgumentException("Error with Terminal character: " + invalidChar +
                 "\nTerminal symbols must be ascii characters between non capital a-z or parenthesis ()");
     }
 
     private void throwNonTerminalInvalidCharError(char invalidChar) {
-        System.out.println("Throwing non terminal");
         throw new IllegalArgumentException("Error with Non Terminal character: " + invalidChar +
                 "\nNon terminal symbols must be ascii characters between capital A-Z");
     }
