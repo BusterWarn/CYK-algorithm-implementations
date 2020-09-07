@@ -124,6 +124,12 @@ public class CYKNaiveTest {
     }
 
     @Test
+    public void testCorrectParenthesis6() {
+        CYKStrategy strategy = setStrategyWithParenthesisGrammar();
+        assertEquals(true, strategy.parse("(bbbb(b)bb(b()b)b)()".toCharArray()));
+    }
+
+    @Test
     public void testFaultyParenthesis0() {
         CYKStrategy strategy = setStrategyWithParenthesisGrammar();
         assertEquals(false, strategy.parse(")(".toCharArray()));

@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a85fd0a-bf11-404a-9fd3-a0b40264b377" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/Grammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/Grammar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/naive/CYKNaiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/naive/CYKNaiveTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
