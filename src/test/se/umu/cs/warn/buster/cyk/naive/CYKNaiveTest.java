@@ -34,11 +34,8 @@ public class CYKNaiveTest {
         grammar.addProductionRule('S', "LR");
         grammar.addProductionRule('S', 'b');
         grammar.addProductionRule('A', "SR");
-        //grammar.addProductionRule('L', "LB");
         grammar.addProductionRule('L', '(');
-        //grammar.addProductionRule('R', "BR");
         grammar.addProductionRule('R', ')');
-        //grammar.addProductionRule('B', 'b');
 
         CYKStrategy strategy = new CYKNaive();
         strategy.setGrammar(grammar);
@@ -120,7 +117,13 @@ public class CYKNaiveTest {
     @Test
     public void testCorrectParenthesis5() {
         CYKStrategy strategy = setStrategyWithParenthesisGrammar();
-        assertEquals(true, strategy.parse("(bbbbbbbbbb)()".toCharArray()));
+        assertEquals(true, strategy.parse("(b)()".toCharArray()));
+    }
+
+    @Test
+    public void testCorrectParenthesis5_2() {
+        CYKStrategy strategy = setStrategyWithParenthesisGrammar();
+        assertEquals(true, strategy.parse("(bbb)(b)".toCharArray()));
     }
 
     @Test
