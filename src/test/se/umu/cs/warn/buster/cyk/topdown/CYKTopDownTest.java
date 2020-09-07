@@ -136,7 +136,7 @@ public class CYKTopDownTest {
     @Test
     public void testCorrectParenthesis7() {
         CYKStrategy strategy = setStrategyWithParenthesisGrammar();
-        assertEquals(true, strategy.parse("(bbbb(b)bb(b()b)b)()".toCharArray()));
+        assertEquals(true, strategy.parse("(bb(b)b(b()b)b)()".toCharArray()));
     }
 
     @Test
