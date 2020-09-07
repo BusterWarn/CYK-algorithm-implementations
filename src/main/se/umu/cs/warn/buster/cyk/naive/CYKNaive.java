@@ -11,7 +11,7 @@ import se.umu.cs.warn.buster.cyk.Grammar;
 public class CYKNaive implements CYKStrategy {
 
     private Grammar grammar;
-    char[] string;
+    private char[] string;
 
     @Override
     public boolean parse(char[] string) {
@@ -22,21 +22,14 @@ public class CYKNaive implements CYKStrategy {
 
     private boolean parseStringRecursively(char fromNonTerminal, int startPos, int endPos) {
 
-        /*for (int i = startPos; i <= endPos; i++) {
-            System.out.print(string[i]);
-        }
-        System.out.println();*/
         if (startPos == endPos) {
             char[] terminalProductions = grammar.getTerminalProductions(fromNonTerminal);
+
             if (terminalProductions == null)
                 return false;
-            for (int i = 0; i < terminalProductions.length; i++) {
-                //System.out.println("From: " + fromNonTerminal + " Char at string[" + startPos + "]: " + string[startPos] + ". Produced: " + terminalProductions[i]);
-                if (string[startPos] == terminalProductions[i]) {
-                    //System.out.println("TRUE: " + fromNonTerminal + " -> " + string[startPos]);
+            for (int i = 0; i < terminalProductions.length; i++)
+                if (string[startPos] == terminalProductions[i])
                     return true;
-                }
-            }
         }
 
         String[] nonTerminalProductions = grammar.getNonTerminalProductions(fromNonTerminal);
@@ -44,19 +37,12 @@ public class CYKNaive implements CYKStrategy {
             for (String s : nonTerminalProductions) {
                 char[] productions = s.toCharArray();
                 for (int i = startPos + 1; i <= endPos; i++) {
-                    //System.out.println();
-                    //System.out.println("first: [" + startPos + " " + (i - 1) + "]");
-                    //7System.out.println("second: [" + i + " " + endPos + "]");
-                    if (parseStringRecursively(productions[0], startPos, i - 1)
-                            && parseStringRecursively(productions[1], i, endPos)) {
-
-                        //System.out.println("Returning true from\tNonterminal: '" + fromNonTerminal + "' string [" + startPos + " " + endPos + "]: ");
+                    if (       parseStringRecursively(productions[0], startPos, i - 1)
+                            && parseStringRecursively(productions[1], i, endPos))
                         return true;
-                    }
                 }
             }
         }
-        //System.out.print("Returning false from\tNonterminal: '" + fromNonTerminal + "' string [" + startPos + " " + endPos + "]: ");
         return false;
     }
 
