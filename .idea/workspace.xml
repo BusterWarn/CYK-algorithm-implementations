@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a85fd0a-bf11-404a-9fd3-a0b40264b377" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/topdown/CYKTopDownTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/topdown/CYKTopDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/topdown/CYKTopDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/naive/CYKNaiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/naive/CYKNaiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="se.umu.cs.warn.buster.cyk.bottomup" />
       <recent name="se.umu.cs.warn.buster.cyk.topdown" />
       <recent name="se.umu.cs.warn.buster.cyk.naive" />
       <recent name="se.umu.cs.warn.buster.cyk.test" />
@@ -80,81 +79,81 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CYKNaiveTest.testCorrectParenthesis7">
-    <configuration name="CYKNaiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CYKBottomUpTest">
+    <configuration name="CYKBottomUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CYK-algorithm-implementations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.naive.*" />
+          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.bottomup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.naive" />
-      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.naive.CYKNaiveTest" />
+      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.bottomup" />
+      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.bottomup.CYKBottomUpTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CYKNaiveTest.testCorrectParenthesis5_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CYKBottomUpTest.testCorrectAB0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CYK-algorithm-implementations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.naive.*" />
+          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.bottomup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.naive" />
-      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.naive.CYKNaiveTest" />
-      <option name="METHOD_NAME" value="testCorrectParenthesis5_2" />
+      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.bottomup" />
+      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.bottomup.CYKBottomUpTest" />
+      <option name="METHOD_NAME" value="testCorrectAB0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CYKNaiveTest.testCorrectParenthesis7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CYKBottomUpTest.testCorrectAB1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CYK-algorithm-implementations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.naive.*" />
+          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.bottomup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.naive" />
-      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.naive.CYKNaiveTest" />
-      <option name="METHOD_NAME" value="testCorrectParenthesis7" />
+      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.bottomup" />
+      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.bottomup.CYKBottomUpTest" />
+      <option name="METHOD_NAME" value="testCorrectAB1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CYKTopDownTest.testCorrectParenthesis6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CYKBottomUpTest.testCorrectAB2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CYK-algorithm-implementations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.topdown.*" />
+          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.bottomup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.topdown" />
-      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.topdown.CYKTopDownTest" />
-      <option name="METHOD_NAME" value="testCorrectParenthesis6" />
+      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.bottomup" />
+      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.bottomup.CYKBottomUpTest" />
+      <option name="METHOD_NAME" value="testCorrectAB2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CYKTopDownTest.testCorrectParenthesis7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CYKBottomUpTest.testFaultyParenthesis6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CYK-algorithm-implementations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.topdown.*" />
+          <option name="PATTERN" value="se.umu.cs.warn.buster.cyk.bottomup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.topdown" />
-      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.topdown.CYKTopDownTest" />
-      <option name="METHOD_NAME" value="testCorrectParenthesis7" />
+      <option name="PACKAGE_NAME" value="se.umu.cs.warn.buster.cyk.bottomup" />
+      <option name="MAIN_CLASS_NAME" value="se.umu.cs.warn.buster.cyk.bottomup.CYKBottomUpTest" />
+      <option name="METHOD_NAME" value="testFaultyParenthesis6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CYKNaiveTest.testCorrectParenthesis7" />
-        <item itemvalue="JUnit.CYKNaiveTest" />
-        <item itemvalue="JUnit.CYKTopDownTest.testCorrectParenthesis7" />
-        <item itemvalue="JUnit.CYKNaiveTest.testCorrectParenthesis5_2" />
-        <item itemvalue="JUnit.CYKTopDownTest.testCorrectParenthesis6" />
+        <item itemvalue="JUnit.CYKBottomUpTest" />
+        <item itemvalue="JUnit.CYKBottomUpTest.testCorrectAB0" />
+        <item itemvalue="JUnit.CYKBottomUpTest.testCorrectAB2" />
+        <item itemvalue="JUnit.CYKBottomUpTest.testCorrectAB1" />
+        <item itemvalue="JUnit.CYKBottomUpTest.testFaultyParenthesis6" />
       </list>
     </recent_temporary>
   </component>
@@ -194,10 +193,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1598767497645">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1600098867751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598767497645" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1600098867751" />
     <state x="681" y="1437" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598599070726">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
@@ -228,32 +227,32 @@
     </state>
     <state x="688" y="1377" key="FileChooserDialogImpl/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598514365306" />
     <state x="754" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598767492634" />
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom" timestamp="1599486421397">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1877" height="262" key="GridCell.Tab.0.bottom" timestamp="1600106015663">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1599463585730" />
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1599384935313" />
+    <state width="1877" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1600106015663" />
     <state width="1877" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598949494252" />
     <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1599486421397" />
-    <state width="1874" height="278" key="GridCell.Tab.0.center" timestamp="1599486421397">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1877" height="262" key="GridCell.Tab.0.center" timestamp="1600106015663">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="262" key="GridCell.Tab.0.center/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1599463585730" />
-    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1599384935313" />
+    <state width="1877" height="262" key="GridCell.Tab.0.center/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1600106015663" />
     <state width="1877" height="340" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598949494252" />
     <state width="1874" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1599486421397" />
-    <state width="1874" height="278" key="GridCell.Tab.0.left" timestamp="1599486421397">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1877" height="262" key="GridCell.Tab.0.left" timestamp="1600106015663">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="262" key="GridCell.Tab.0.left/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1599463585730" />
-    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1599384935312" />
+    <state width="1877" height="262" key="GridCell.Tab.0.left/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1600106015663" />
     <state width="1877" height="340" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598949494252" />
     <state width="1874" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1599486421397" />
-    <state width="1874" height="278" key="GridCell.Tab.0.right" timestamp="1599486421397">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1877" height="262" key="GridCell.Tab.0.right" timestamp="1600106015663">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="2005" height="262" key="GridCell.Tab.0.right/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1599463585730" />
-    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1599384935313" />
+    <state width="1877" height="262" key="GridCell.Tab.0.right/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1600106015663" />
     <state width="1877" height="340" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598949494252" />
     <state width="1874" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1599486421397" />
     <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1599480376621">
@@ -291,10 +290,11 @@
     </state>
     <state x="612" y="1527" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599249945" />
     <state x="683" y="450" width="636" height="229" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1053@0.27.1920.1053" timestamp="1599476020181" />
-    <state x="745" y="370" width="569" height="412" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599481292609">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="745" y="339" width="569" height="412" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600087398308">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="1442" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1599374617870" />
+    <state x="745" y="339" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1600087398308" />
     <state x="745" y="370" width="569" height="412" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1599481292609" />
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1598767419105">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -310,16 +310,5 @@
     <state x="571" y="1323" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598950699450" />
     <state x="644" y="227" width="672" height="635" key="search.everywhere.popup/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1598775082953" />
     <state x="644" y="257" width="672" height="643" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1599479220094" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/se/umu/cs/warn/buster/cyk/naive/CYKNaiveTest.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
