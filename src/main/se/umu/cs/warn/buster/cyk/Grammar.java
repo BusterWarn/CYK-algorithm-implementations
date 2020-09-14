@@ -33,18 +33,50 @@ public class Grammar {
         return null;
     }
 
-    public String findCartesianProductFromProduction (char[] produced) {
+    public String findCartesianProductFromProduction(String produced) {
 
-        return null;
+        if (produced.length() == 1) {
+            if (!isTerminalProductionCharacter(produced.charAt(0)))
+                throwTerminalInvalidCharError(produced.charAt(0));
+            return findNonTerminalFromProduction(produced.charAt(0));
+        }
+
+        if (produced.length() != 2)
+            throw new IllegalArgumentException("Error: \r\nProduced '" + produced + "' does not follow CNF");
+
+        for (int i = 0; i < 2; i++) {
+            if (!isNonTerminalProductionCharacter(produced.charAt(i)))
+                throwNonTerminalInvalidCharError(produced.charAt(i));
+        }
+        return findNonTerminalFromProduction(produced);
     }
 
-    private void findNonTerminalFromProduction(char c) {
+    public String findNonTerminalFromProduction(char produced) {
 
-
+        StringBuilder cartesianProduct = new StringBuilder();
+        for (int i = 0; i < terminalProductions.length; i++) {
+            if (terminalProductions[i] == null)
+                continue;
+            for (int j = 0; j < terminalProductions[i].length; j++) {
+                if (terminalProductions[i][j] == produced)
+                    cartesianProduct.append(nonTerminals[i]);
+            }
+        }
+        return cartesianProduct.toString();
     }
 
-    private void findNonTerminalFromProduction(String s) {
+    private String findNonTerminalFromProduction(String produced) {
 
+        StringBuilder cartesianProduct = new StringBuilder();
+        for (int i = 0; i < nonTerminalProductions.length; i++) {
+            if (nonTerminalProductions[i] == null)
+                continue;
+            for (int j = 0; j < nonTerminalProductions[i].length; j++) {
+                if (nonTerminalProductions[i][j].equals(produced))
+                    cartesianProduct.append(nonTerminals[i]);
+            }
+        }
+        return cartesianProduct.toString();
     }
 
     private boolean charArrayContains(char[] array, char element) {

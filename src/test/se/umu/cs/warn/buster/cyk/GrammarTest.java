@@ -137,32 +137,42 @@ public class GrammarTest {
     }
 
     @Test
-    public void testFindCartesianProductByTerminalChar() {
-
+    public void testFindCartesianProduct0() {
+        setGrammarWithProductions();
+        assertEquals("A", grammar.findCartesianProductFromProduction("a"));
     }
 
     @Test
-    public void testFindMissingCartesianProductByTerminalChar() {
-
+    public void testFindCartesianProduct1() {
+        setGrammarWithProductions();
+        assertEquals("B", grammar.findCartesianProductFromProduction("b"));
     }
 
     @Test
-    public void testFindCartesianProductByNonTerminalChar() {
-
+    public void testFindCartesianProduct2() {
+        setGrammarWithProductions();
+        String cartesianProduct = grammar.findCartesianProductFromProduction("AB");
+        assertTrue(cartesianProduct.contains("S"));
     }
 
     @Test
-    public void testFindMissingCartesianProductByNonTerminalChar() {
-
+    public void testFindCartesianProduct3() {
+        setGrammarWithProductions();
+        String cartesianProduct = grammar.findCartesianProductFromProduction("AB");
+        assertTrue(cartesianProduct.contains("B"));
     }
 
     @Test
-    public void testFindCartesianProductByNonTerminalString() {
-
+    public void testFindCartesianProduct4() {
+        setGrammarWithProductions();
+        String cartesianProduct = grammar.findCartesianProductFromProduction("AB");
+        assertEquals(2, cartesianProduct.length());
     }
 
     @Test
-    public void testFindMissingCartesianProductByNonTerminalString() {
-
+    public void testFindCartesianProduct5() {
+        setGrammarWithProductions();
+        String cartesianProduct = grammar.findCartesianProductFromProduction("BA");
+        assertEquals("A", cartesianProduct);
     }
 }
