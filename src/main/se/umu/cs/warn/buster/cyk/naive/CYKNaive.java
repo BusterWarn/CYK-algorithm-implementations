@@ -19,9 +19,7 @@ public class CYKNaive implements CYKStrategy {
 
         nrOperations = 0;
         this.string = string;
-        boolean solution = parseStringRecursively(grammar.getStart(), 0, string.length - 1);
-        System.out.println(nrOperations);
-        return solution;
+        return parseStringRecursively(grammar.getStart(), 0, string.length - 1);
     }
 
     private boolean parseStringRecursively(char fromNonTerminal, int startPos, int endPos) {
@@ -57,12 +55,12 @@ public class CYKNaive implements CYKStrategy {
         return false;
     }
 
-    @Override
-    public String getName() {
-        return "CYKNaive";
-    }
-
     public void setGrammar(Grammar grammar) {
         this.grammar = grammar;
+    }
+
+    @Override
+    public int getNrOperations() {
+        return nrOperations;
     }
 }

@@ -59,13 +59,13 @@ public class CYKBottomUp implements CYKStrategy {
     }
 
     @Override
-    public String getName() {
-        return "CYKBottomUp";
+    public void setGrammar(Grammar grammar) {
+        this.grammar = grammar;
     }
 
     @Override
-    public void setGrammar(Grammar grammar) {
-        this.grammar = grammar;
+    public int getNrOperations() {
+        return 0;
     }
 
 

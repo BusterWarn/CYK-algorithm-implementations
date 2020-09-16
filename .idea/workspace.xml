@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a85fd0a-bf11-404a-9fd3-a0b40264b377" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/CYKStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/CYKStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/bottomup/CYKBottomUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/naive/CYKNaive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/topdown/CYKTopDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/se/umu/cs/warn/buster/cyk/topdown/CYKTopDown.java" afterDir="false" />
@@ -202,10 +203,11 @@
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
     <state x="681" y="1437" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598599070726" />
-    <state x="713" y="1342" key="#com.intellij.ide.util.MemberChooser" timestamp="1598943417589">
-      <screen x="-116" y="1080" width="2048" height="1112" />
+    <state x="777" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1600234700182">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="713" y="1342" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-116.1080.2048.1112@-116.1080.2048.1112" timestamp="1598943417589" />
+    <state x="777" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-116.1080.2048.1112@0.0.1920.1040" timestamp="1600234700182" />
     <state x="638" y="1412" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1599374609074">
       <screen x="-116" y="1080" width="2048" height="1112" />
     </state>
