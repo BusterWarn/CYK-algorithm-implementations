@@ -13,6 +13,8 @@ public class Benchmark {
 
     public static void main(String[] args) {
 
+        boolean runNaive = false;
+
         Grammar grammar = createGrammar();
         Parser parser = new Parser(grammar);
 
@@ -24,24 +26,52 @@ public class Benchmark {
         strategies[1] = new CYKTopDown();
         strategies[2] = new CYKBottomUp();
 
-        int[][] operations = new int[3][nrRuns];
+        long[][] operations = new long[3][nrRuns];
         long[][] timeStapms = new long[3][nrRuns];
 
 
-
+        System.out.println("Results printed to csv format. Format is the following:\n" +
+                "length of string, naive nr operations, naive time, topdown nr operations, topdown time, " +
+                "bottom up nr of operations, bottom up time");
+        int three_counter = 1;
         for (int i = 0; i < nrRuns; i++) {
 
-            string = "(" + string + ")";
-            System.out.println("Run nr " + i + " string: '" + string + "'");
+            int halfIndex = string.length() / 2;
+
+            if (three_counter == 1) {
+                string = string.substring(0,halfIndex) + "b" + string.substring(halfIndex, string.length());
+                three_counter++;
+            }
+            else if (three_counter == 2) {
+                if ((i + 1) % 4 == 0) {
+                    string = "b" + string;
+                } else {
+                    string = string + "b";
+                }
+                three_counter++;
+            } else if (three_counter == 3) {
+
+                // remove one b from string
+                for (int k = halfIndex; k < string.length(); k++) {
+                    if (string.charAt(k) == 'b') {
+                        string = string.substring(0, k) + string.substring(k + 1);
+                        break;
+                    }
+                }
+                string = "(" + string + ")";
+                three_counter = 1;
+            }
 
             for (int j = 0; j < 3; j++) {
+                if (!runNaive && (j == 0))
+                    continue;
                 long timeMillis = System.currentTimeMillis();
                 parser.setStrategy(strategies[j]);
                 operations[j][i] = parser.parse(string);
                 timeStapms[j][i] = System.currentTimeMillis() - timeMillis;
             }
 
-            System.out.printf("Finnished parsing: Naive: %d - %d\tTopDown: %d - %d\tBottomUp: %d - %d\r\n\r\n",
+            System.out.printf("%d,%d,%d,%d,%d,%d,%d\r\n", string.length(),
                     operations[0][i], timeStapms[0][i],
                     operations[1][i], timeStapms[1][i],
                     operations[2][i], timeStapms[2][i]);
@@ -52,8 +82,9 @@ public class Benchmark {
         Grammar grammar = new Grammar();
         grammar.setStart('S');
         grammar.setNonTerminals("SALR".toCharArray());
-        grammar.setTerminals("()".toCharArray());
+        grammar.setTerminals("b()".toCharArray());
         grammar.addProductionRule('S', "SS");
+        grammar.addProductionRule('S', 'b');
         grammar.addProductionRule('S', "LA");
         grammar.addProductionRule('S', "LR");
         grammar.addProductionRule('A', "SR");
