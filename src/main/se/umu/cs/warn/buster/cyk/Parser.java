@@ -18,10 +18,12 @@ public class Parser {
         this.grammar = grammar;
     }
 
-    public boolean parse(String string) {
+    public int parse(String string) {
 
         strategy.setGrammar(grammar);
-        return strategy.parse(string.toCharArray());
+        if (!strategy.parse(string.toCharArray()))
+            return -1;
+        return strategy.getNrOperations();
     }
 
     public void setStrategy(CYKStrategy strategy) {

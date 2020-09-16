@@ -65,7 +65,7 @@ public class CYKBottomUp implements CYKStrategy {
 
     @Override
     public int getNrOperations() {
-        return 0;
+        return nrOperations;
     }
 
 
