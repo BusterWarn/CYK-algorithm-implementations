@@ -53,18 +53,19 @@ public class CYKTopDown implements CYKStrategy {
                 for (int i = startPos + 1; i <= endPos; i++) {
 
                     boolean leftValue = parseStringRecursively(productions[0], startPos, i - 1);
-                    boolean rightValue = parseStringRecursively(productions[1], i, endPos);
-
                     String leftString = String.valueOf(productions[0]) + startPos + (i - 1);
-                    String rightString = String.valueOf(productions[1]) + i + endPos;
-
                     if (!mem.containsKey(leftString))
                         mem.put(leftString, leftValue);
 
+                    if (!leftValue)
+                        continue;
+
+                    boolean rightValue = parseStringRecursively(productions[1], i, endPos);
+                    String rightString = String.valueOf(productions[1]) + i + endPos;
                     if (!mem.containsKey(rightString))
                         mem.put(rightString, rightValue);
 
-                    if (leftValue && rightValue)
+                    if (rightValue)
                         return true;
                 }
             }
