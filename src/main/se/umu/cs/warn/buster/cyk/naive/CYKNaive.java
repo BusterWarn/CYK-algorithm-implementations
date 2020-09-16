@@ -44,9 +44,12 @@ public class CYKNaive implements CYKStrategy {
                 for (int i = startPos + 1; i <= endPos; i++) {
 
                     boolean leftValue = parseStringRecursively(productions[0], startPos, i - 1);
+                    if (!leftValue)
+                        continue;
+
                     boolean rightValue = parseStringRecursively(productions[1], i, endPos);
 
-                    if (leftValue && rightValue)
+                    if (rightValue)
                         return true;
                 }
             }
